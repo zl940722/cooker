@@ -1,5 +1,3 @@
-import { useState, useRef, useCallback } from 'react';
-import { motion } from 'framer-motion';
 import type { Ingredient } from '../types';
 
 interface IngredientCardProps {
@@ -14,7 +12,6 @@ const CATEGORY_EMOJI: Record<string, string> = {
 };
 
 export default function IngredientCard({ ingredient, onUpdate, onRemove }: IngredientCardProps) {
-  const [showDelete, setShowDelete] = useState(false);
   const emoji = CATEGORY_EMOJI[ingredient.category] || '📦';
 
   return (

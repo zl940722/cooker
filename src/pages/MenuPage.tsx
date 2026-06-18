@@ -28,7 +28,7 @@ function shiftDate(dateStr: string, days: number): string {
 
 export default function MenuPage() {
   const { items: recipes } = useStore<Recipe>(STORAGE_KEYS.recipes);
-  const { items: menus, add: addMenu, update: updateMenu, setItems: setMenus } = useStore<DailyMenu>(STORAGE_KEYS.menus);
+  const { items: menus, add: addMenu, update: updateMenu } = useStore<DailyMenu>(STORAGE_KEYS.menus);
   const { items: members } = useStore<FamilyMember>(STORAGE_KEYS.members);
 
   const [date, setDate] = useState(getTomorrow);

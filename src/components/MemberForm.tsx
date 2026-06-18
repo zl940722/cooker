@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FamilyMember, ALLERGEN_PRESETS, PREFERENCE_PRESETS } from '../types';
+import type { FamilyMember } from '../types';
+import { ALLERGEN_PRESETS, PREFERENCE_PRESETS } from '../types';
 
 const EMOJI_OPTIONS = ['👨', '👩', '👦', '👧', '👴', '👵', '🧑', '👶', '🐱', '🐶', '🧒', '👸'];
 

@@ -1,4 +1,4 @@
-import { FamilyMember } from '../types';
+import type { FamilyMember } from '../types';
 
 interface MemberCardProps {
   member: FamilyMember;
